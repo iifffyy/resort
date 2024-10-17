@@ -34,12 +34,6 @@
       href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css"
     />
     <link rel="stylesheet" href="/resources/demos/style.css" />
-
-    <script>
-      $(function () {
-        $("#datepicker").datepicker();
-      });
-    </script>
   </head>
   <body class="body">
     <!-- start:: top-header -->
@@ -315,8 +309,9 @@
       </div>
     </div>
     <!-- End:: Bottom Header  -->
+
     <!-- start::checkin-checkout -->
-    <div class="checkin-checkout">
+    <div class="checkin-checkout" style="display: flex">
       <div class="container">
         <div class="headers-of-checkin-checkout text-center">
           <p>Best Choice for a Family</p>
@@ -333,15 +328,47 @@
             ></i>
           </button>
         </div>
-        <div class="reservation">
-          <div class="row text-center">
-            <div class="col-md-4 col-sm-4">
-              Check-In date
-              <input type="text" placeholder="dd/mm/yy" />
-              <p>Date: <input type="password" id="datepicker" /></p>
+        <div class="reservation" style="display: flex">
+          <div class="row">
+            <div class="col-md-3 col-sm-3 reservation-1st">
+              <p style="color: rgb(0, 0, 0)">Check-In</p>
+              <input
+                class="check-in align-left"
+                type="text"
+                id="datepicker"
+                placeholder="  dd/mm/yyyy"
+              />
             </div>
-            <div class="col-md-4 col-sm-4">vfd</div>
-            <div class="col-md-4 col-sm-4">ddsfdf</div>
+            <div class="col-md-3 col-sm-3">
+              <p style="color: rgb(0, 0, 0)">Check-Out</p>
+              <input
+                class="check-in align-left"
+                type="text"
+                id="datepicker"
+                placeholder="  dd/mm/yyyy"
+              />
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <p style="color: rgb(0, 0, 0)">Guests</p>
+              <input
+                class="check-in align-left"
+                type="text"
+                id="datepicker"
+                placeholder="  4 Guests(s)"
+              />
+              <!-- <div class="guest-list">
+                <div class="guest-list-first">
+                  <span>Adult</span>
+                  <input type="text" />
+                </div>
+                <div class="guest-list-second">
+                  <span>Child</span> <input type="number" />
+                </div>
+                <div class="guest-list-search"></div>
+              </div> -->
+            </div>
+            <div class="col-md-3 col-sm-3"><button class=" search-red">Search</button></div>
+            
           </div>
         </div>
       </div>
@@ -374,5 +401,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
   </body>
 </html>

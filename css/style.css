@@ -247,7 +247,7 @@ ul.dropdown-menu-section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 1000px;
+  height: 1500px;
 }
 .headers-of-checkin-checkout {
   color: var(--tp-common-white);
@@ -257,15 +257,45 @@ ul.dropdown-menu-section {
 .headers-of-checkin-checkout h5 {
   font-size: 6.25rem;
 }
-.Explore-more{
+.Explore-more {
   background-color: transparent;
   border-radius: 50px;
   border: 1px solid rgb(224, 222, 222);
   color: white;
   padding: 15px 30px;
 }
-.Explore-more:hover{
+.Explore-more:hover {
   background-color: var(--tp-common-white);
   color: var(--tp-common-black);
   transition: 1s;
+}
+.reservation {
+  background-color: white;
+  margin: 182px;
+  padding: 30px 71px;
+}
+.check-in {
+  border: none;
+  background-color: #f6f6f6;
+  padding: 16px 60px;
+}
+.check-in:focus-visible {
+  border: none;
+  outline: none;
+}
+.search-red {
+  border: none;
+  color: white;
+  background-color: var(--tp-theme-primary);
+  padding: 10px 30px;
+}
+.search-red:hover {
+  background-color: black;
+  transition: 1s;
+}
+.guest-list-first span {
+  color: #141414;
+}
+.guest-list input {
+  border-color: gray;
 }
